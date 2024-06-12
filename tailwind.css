@@ -1,0 +1,63 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+/* header & footer */
+body{@apply bg-gray-100}
+body nav{@apply flex md:justify-between  bg-gray-100 h-10 uppercase md:px-4 shadow-md}
+.title-signup{@apply flex md:items-center}
+body nav h1{@apply font-bold md:text-xl text-red-500}
+h2{@apply font-bold text-sm text-red-500 md:pl-2}
+.cartIcon{@apply text-lg text-blue-600}
+.pages{@apply flex md:items-center md:px-10 }
+body nav h2{@apply mx-4 hover:scale-125 transition ease-out duration-500}
+
+/* home page */
+.main{@apply mt-12 mx-12}
+.load{@apply text-xl text-center mt-2}
+.content{@apply grid grid-cols-4 my-8 md:mx-12}
+.pro{@apply flex-col my-4 ml-4 w-fit hover:border-blue-500 border border-black } 
+.img{@apply min-h-60}
+.details{@apply p-2 border border-t-black bg-white shadow-md font-semibold}
+.name{@apply text-2xl mb-1}
+.rowPro{@apply flex flex-row justify-between items-center text-xl}
+.cart{@apply flex items-center text-blue-500 hover:text-gray-500}
+.delete-button{@apply flex items-center text-red-500 hover:text-gray-500}
+
+/*form.js*/
+.content-form{@apply flex justify-center mt-20 mb-12}
+input{@apply block p-2  mb-1 border-2 border-blue-400 w-96 h-10}
+.submit{@apply block bg-red-500 text-white rounded-full px-2 py-1 w-fit hover:bg-gray-500}
+
+/*cart page*/
+.mainCart{@apply flex justify-center}
+.contentCart{@apply flex-col my-8 md:mx-12 max-w-md}
+.titleCart,
+.total, .totalPayment{@apply mb-8 text-center text-blue-500 text-2xl font-bold}
+.totalPayment{@apply block }
+.rowCart{@apply flex justify-between items-center p-2 my-4 shadow-md text-2xl font-bold text-red-500}
+.linkPay{@apply  bg-blue-500 text-white text-sm rounded-full px-2 py-1 w-fit hover:bg-gray-500}
+.proCart{@apply grid grid-cols-5 gap-2 text-lg font-semibold items-center mb-1 border border-blue-500}
+.qu{@apply flex border-none font-bold text-blue-500 w-12  bg-gray-100}
+
+/*oneProduct*/
+.mainDtails{@apply flex justify-center my-12}
+.contentDtails{@apply flex-col w-fit max-w-md}
+.desc{@apply mt-1}
+.formComment{@apply flex flex-col ml-4 my-4}
+.inputComment{@apply block border-2 w-80 border-blue-400 h-20 mb-1}
+.inputRatingDiv{@apply flex flex-row items-center }
+.divStarInput{@apply flex mr-2}
+/* .starLabel1, .starLabel2, .starLabel3{@apply hover:text-yellow-500 cursor-pointer} */
+.starInput{@apply hidden}
+.interactions{@apply flex flex-col ml-4 my-4}
+.comment{@apply border rounded-xl border-blue-500  p-2 mb-1}
+.createdAt{@apply flex flex-row items-center justify-between}
+.rate{@apply text-xl text-yellow-600}
+.star { @apply cursor-pointer mr-2 text-2xl }
+.one {@apply text-yellow-500  }
+.two { @apply text-yellow-500 }
+.three { @apply text-yellow-500 }
+.four { @apply text-yellow-500 }
+.five { @apply text-yellow-500 }
